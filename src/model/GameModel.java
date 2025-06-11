@@ -27,9 +27,9 @@ public class GameModel {
 
     private void initializeCards() {
         // Créer 8 paires (16 cartes) pour une grille 4x4
-        String[] images = {"A", "B",
-                "C", "D",
-                "E", "F", "G", "H"
+        String[] images = {"images/img_7.png", "images/img_6.png",
+                "images/img_5.png", "images/img_4.png",
+                "images/img_3.png", "images/img_2.png",  "images/img_8.png", "images/img_1.png"
         };
 
         int id = 0;

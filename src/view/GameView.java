@@ -311,7 +311,7 @@ public class GameView extends JFrame {
                 if (card.isFaceUp()) {
                     // Afficher l'image de la carte
                     try {
-                        ImageIcon icon = new ImageIcon(getClass().getResource("/images/" + card.getImagePath()));
+                        ImageIcon icon = new ImageIcon(getClass().getResource("/" + card.getImagePath()));
                         Image image = icon.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
                         button.setIcon(new ImageIcon(image));
                         button.setText("");
