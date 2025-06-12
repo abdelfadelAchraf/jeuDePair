@@ -1,4 +1,3 @@
-
 import controller.GameController;
 
 import java.sql.Connection;
@@ -7,29 +6,54 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
+
 public class Main {
     public static void main(String[] args) {
         // Créer la base de données si elle n'existe pas
         createDatabaseIfNotExists();
 
-        // Demander le nom du joueur
-        String playerName = JOptionPane.showInputDialog(null, "Entrez votre nom:", "Jeu de Paires", JOptionPane.QUESTION_MESSAGE);
+        // Demander le nom du joueur avec un bouton personnalisé
+        String playerName = getPlayerName();
         if (playerName == null || playerName.trim().isEmpty()) {
             playerName = "Joueur";
         }
 
-       
         new GameController(playerName);
+    }
 
+    private static String getPlayerName() {
+        JTextField nameField = new JTextField(15);
+        Object[] message = {"Entrez votre nom:", nameField};
+        String[] options = {"Jouer", "Annuler"}; // "Valider" au lieu de "OK"
+
+        int result = JOptionPane.showOptionDialog(
+                null,
+                message,
+                "Jeu de Paires",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                options,
+                options[0] // "Valider" est sélectionné par défaut
+        );
+
+        if (result == JOptionPane.YES_OPTION) {
+            return nameField.getText();
+        } else {
+            // Si l'utilisateur annule, quitter l'application
+            System.exit(0);
+            return null;
+        }
     }
 
     private static void createDatabaseIfNotExists() {
         try {
             // Créer la connexion à MySQL sans spécifier de base de données
-             final   String url = "jdbc:mysql://localhost:3306/" ;
-             final  String user = "root" ;
-             final String password ="";
+            final String url = "jdbc:mysql://localhost:3306/";
+            final String user = "root";
+            final String password = "";
             Connection conn = DriverManager.getConnection(url, user, password);
             Statement stmt = conn.createStatement();
 
