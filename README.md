@@ -54,8 +54,8 @@ Avant d'exécuter le projet, assurez-vous d'avoir installé :
 ### 1. Cloner le repository
 
 ```bash
-git clone https://github.com/votre-username/memory-game.git
-cd memory-game
+git clone https://github.com/abdelfadelAchraf/jeuDePair.git
+cd jeuDePair
 ```
 
 ### 2. Importer le projet
