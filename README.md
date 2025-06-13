@@ -239,7 +239,11 @@ Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE` pour plus d
 
 ## 👥 Auteurs
 
-- **Votre Nom** - *Développeur principal* - [VotreGitHub](https://github.com/votre-username)
+- **Samir Ait said** - *Développeur principal* - [GitHub](https://github.com/samirzoidac55)
+- Nom : *Achraf Abdelfadel* [github.com/abdelfadelAchraf](https://github.com/abdelfadelAchraf)
+- Nom : *Samir Ait said* [github.com/samirzoidac55](https://github.com/samirzoidac55)
+- Nom : *Saad El Aroui* [github.com/Saadar0](https://github.com/Saadar0)
+- Nom : *zakaria ennaqui* [github.com/zakariaennaqui](https://github.com/zakariaennaqui)
 
 ## 🆘 Support
 
