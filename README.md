@@ -2,7 +2,7 @@
 
 Une application Java desktop avec interface graphique permettant de jouer au jeu de mémoire classique (jeu des paires). Le projet utilise **Java Swing** pour l'interface utilisateur et **MySQL** pour la persistance des scores, suivant l'architecture **MVC (Modèle-Vue-Contrôleur)**.
 
-## 📋 Table des matières
+## Table des matières
 
 - [Aperçu](#aperçu)
 - [Fonctionnalités](#fonctionnalités)
@@ -16,11 +16,11 @@ Une application Java desktop avec interface graphique permettant de jouer au jeu
 - [Screenshots](#screenshots)
 - [Contribution](#contribution)
 
-## 🎮 Aperçu
+## Aperçu
 
 Le jeu de mémoire consiste à retourner des cartes pour former des paires identiques. Le joueur dispose de 3 essais pour trouver toutes les 8 paires disposées sur une grille 4x4. Le système enregistre automatiquement les meilleurs scores avec le temps de jeu et la date.
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - **Jeu de mémoire classique** : Grille 4x4 avec 8 paires d'images à associer
 - **Système de score** : Suivi du score et du temps de jeu
@@ -40,7 +40,7 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 - **Architecture MVC** - Séparation des responsabilités
 - **IntelliJ IDEA** - Environnement de développement
 
-## 📋 Prérequis
+## Prérequis
 
 Avant d'exécuter le projet, assurez-vous d'avoir installé :
 
@@ -49,7 +49,7 @@ Avant d'exécuter le projet, assurez-vous d'avoir installé :
 - **MySQL Connector/J 8.0.18** (inclus dans le projet)
 - Un IDE Java (IntelliJ IDEA recommandé)
 
-## 🚀 Installation
+## Installation
 
 ### 1. Cloner le repository
 
@@ -69,7 +69,7 @@ cd jeuDePair
 Le connecteur MySQL est déjà configuré dans le projet. Vérifiez que le fichier JAR est bien présent :
 - `mysql-connector-java-8.0.18.jar`
 
-## 🗃️ Configuration de la base de données
+## Configuration de la base de données
 
 ### Configuration automatique
 
@@ -110,7 +110,7 @@ private static final String USER = "root";
 private static final String PASS = "votre_mot_de_passe";
 ```
 
-## 🎯 Utilisation
+## Utilisation
 
 ### Lancement du jeu
 
@@ -136,7 +136,7 @@ private static final String PASS = "votre_mot_de_passe";
 - **High Scores** : Consulter le tableau des meilleurs scores
 - **Timer** : Suivi du temps de jeu en temps réel
 
-## 🏗️ Architecture du projet
+## Architecture du projet
 
 Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
 
@@ -182,7 +182,7 @@ MemoryGame/
 └── README.md                      # Documentation
 ```
 
-## 🎨 Screenshots
+## Screenshots
 
 ### Interface principale
 - Grille 4x4 avec cartes retournables
