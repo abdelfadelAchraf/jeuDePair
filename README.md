@@ -4,7 +4,7 @@ Une application Java desktop avec interface graphique permettant de jouer au jeu
 
 ## Table des matières
 
-- [Aperçu](#aperçu)
+- [Aperçu](#Aperçu)
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies utilisées](#technologies-utilisées)
 - [Prérequis](#prérequis)
