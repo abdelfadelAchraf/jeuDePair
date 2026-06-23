@@ -6,6 +6,68 @@ Une application Java desktop avec interface graphique permettant de jouer au jeu
 
 Le jeu de mémoire consiste à retourner des cartes pour former des paires identiques. Le joueur dispose de 3 essais pour trouver toutes les 8 paires disposées sur une grille 4x4. Le système enregistre automatiquement les meilleurs scores avec le temps de jeu et la date.
 
+## Architecture du projet
+
+Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
+
+* Modèle (Model)
+  - **`GameModel.java`** : Logique de jeu, gestion des cartes et des règles
+  - **`Card.java`** : Représentation d'une carte de jeu
+  - **`DatabaseManager.java`** : Gestion des interactions avec la base de données
+  - **`ScoreEntry.java`** : Modèle de données pour les scores
+
+* Vue (View)
+  - **`GameView.java`** : Interface principale de jeu
+  - **`GameOverView.java`** : Écran de fin de partie
+  - **`HighScoresView.java`** : Tableau des meilleurs scores
+
+* Contrôleur (Controller)
+  - **`GameController.java`** : Coordination entre le modèle et la vue
+  - **`Main.java`** : Point d'entrée de l'application
+
+## Technologies utilisées
+
+- **Java 17** - Langage de programmation principal
+- **Java Swing** - Interface graphique utilisateur
+- **JDBC** - Connectivité avec la base de données
+- **MySQL 8.0** - Base de données pour la persistance
+- **Architecture MVC** - Séparation des responsabilités
+- **IntelliJ IDEA** - Environnement de développement
+
+## Prérequis
+
+- **Java Development Kit (JDK) 17** ou supérieur
+- **MySQL Server 8.0** ou supérieur
+- **MySQL Connector/J 8.0.18** (inclus dans le projet)
+- IDE Java (IntelliJ IDEA)
+
+## Structure des fichiers
+
+```
+MemoryGame/
+├── .idea/                          # Configuration IntelliJ IDEA
+├── src/
+│   ├── Main.java                   # Point d'entrée
+│   ├── controller/
+│   │   └── GameController.java     # Contrôleur principal
+│   ├── model/
+│   │   ├── Card.java              # Modèle de carte
+│   │   ├── DatabaseManager.java   # Gestion BDD
+│   │   ├── GameModel.java         # Logique de jeu
+│   │   └── ScoreEntry.java        # Modèle de score
+│   └── view/
+│       ├── GameView.java          # Interface de jeu
+│       ├── GameOverView.java      # Écran de fin
+│       └── HighScoresView.java    # Tableau des scores
+├── images/                         # Ressources images
+│   ├── img_1.png
+│   ├── img_2.png
+│   └── ... (8 images au total)
+├── MemoryGame.iml                 # Configuration du module
+├── .gitignore                     # Fichiers ignorés par Git
+└── README.md                      # Documentation
+```
+
 ## Fonctionnalités
 
 * **Jeu de mémoire classique** : grille 4×4 composée de 8 paires d'images à associer.
@@ -27,22 +89,6 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
   * Classement des 10 meilleurs joueurs.
   * Affichage du score, du temps réalisé et de la date de la partie.
   * Tri des résultats par score décroissant, puis par temps croissant.
-
-## Technologies utilisées
-
-- **Java 17** - Langage de programmation principal
-- **Java Swing** - Interface graphique utilisateur
-- **JDBC** - Connectivité avec la base de données
-- **MySQL 8.0** - Base de données pour la persistance
-- **Architecture MVC** - Séparation des responsabilités
-- **IntelliJ IDEA** - Environnement de développement
-
-## Prérequis
-
-- **Java Development Kit (JDK) 17** ou supérieur
-- **MySQL Server 8.0** ou supérieur
-- **MySQL Connector/J 8.0.18** (inclus dans le projet)
-- IDE Java (IntelliJ IDEA)
 
 ## Installation
 1. Repo
@@ -105,52 +151,6 @@ private static final String PASS = "password";
   * **Formez des paires** en associant des images identiques
   * **Objectif** : Trouver toutes les 8 paires en maximum 3 erreurs
   * **Score** : Plus vous trouvez de paires rapidement, meilleur est votre score
-
-## Architecture du projet
-
-Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
-
-* Modèle (Model)
-  - **`GameModel.java`** : Logique de jeu, gestion des cartes et des règles
-  - **`Card.java`** : Représentation d'une carte de jeu
-  - **`DatabaseManager.java`** : Gestion des interactions avec la base de données
-  - **`ScoreEntry.java`** : Modèle de données pour les scores
-
-* Vue (View)
-  - **`GameView.java`** : Interface principale de jeu
-  - **`GameOverView.java`** : Écran de fin de partie
-  - **`HighScoresView.java`** : Tableau des meilleurs scores
-
-* Contrôleur (Controller)
-  - **`GameController.java`** : Coordination entre le modèle et la vue
-  - **`Main.java`** : Point d'entrée de l'application
-
-## Structure des fichiers
-
-```
-MemoryGame/
-├── .idea/                          # Configuration IntelliJ IDEA
-├── src/
-│   ├── Main.java                   # Point d'entrée
-│   ├── controller/
-│   │   └── GameController.java     # Contrôleur principal
-│   ├── model/
-│   │   ├── Card.java              # Modèle de carte
-│   │   ├── DatabaseManager.java   # Gestion BDD
-│   │   ├── GameModel.java         # Logique de jeu
-│   │   └── ScoreEntry.java        # Modèle de score
-│   └── view/
-│       ├── GameView.java          # Interface de jeu
-│       ├── GameOverView.java      # Écran de fin
-│       └── HighScoresView.java    # Tableau des scores
-├── images/                         # Ressources images
-│   ├── img_1.png
-│   ├── img_2.png
-│   └── ... (8 images au total)
-├── MemoryGame.iml                 # Configuration du module
-├── .gitignore                     # Fichiers ignorés par Git
-└── README.md                      # Documentation
-```
 
 ## Groupe
 
