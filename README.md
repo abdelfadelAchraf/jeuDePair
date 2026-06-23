@@ -90,40 +90,40 @@ private static final String PASS = "password";
 
 - Lancement du jeu
 
-1. **Compile & execute** :
+  * **Compile & execute** :
    ```bash
    javac -cp ".:mysql-connector-java-8.0.18.jar" src/*.java src/**/*.java
    java -cp ".:mysql-connector-java-8.0.18.jar:src" Main
    ```
 
-2. **depuis IDE** : `Main.java`
+  * **depuis IDE** : `Main.java`
 
 - Règles du jeu
 
-1. **Saisissez nom** au démarrage
-2. **Cliquez sur les cartes** pour les retourner (2 à la fois)
-3. **Formez des paires** en associant des images identiques
-4. **Objectif** : Trouver toutes les 8 paires en maximum 3 erreurs
-5. **Score** : Plus vous trouvez de paires rapidement, meilleur est votre score
+  * **Saisissez nom** au démarrage
+  * **Cliquez sur les cartes** pour les retourner (2 à la fois)
+  * **Formez des paires** en associant des images identiques
+  * **Objectif** : Trouver toutes les 8 paires en maximum 3 erreurs
+  * **Score** : Plus vous trouvez de paires rapidement, meilleur est votre score
 
 ## Architecture du projet
 
 Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
 
-### Modèle (Model)
-- **`GameModel.java`** : Logique de jeu, gestion des cartes et des règles
-- **`Card.java`** : Représentation d'une carte de jeu
-- **`DatabaseManager.java`** : Gestion des interactions avec la base de données
-- **`ScoreEntry.java`** : Modèle de données pour les scores
+* Modèle (Model)
+  - **`GameModel.java`** : Logique de jeu, gestion des cartes et des règles
+  - **`Card.java`** : Représentation d'une carte de jeu
+  - **`DatabaseManager.java`** : Gestion des interactions avec la base de données
+  - **`ScoreEntry.java`** : Modèle de données pour les scores
 
-### Vue (View)
-- **`GameView.java`** : Interface principale de jeu
-- **`GameOverView.java`** : Écran de fin de partie
-- **`HighScoresView.java`** : Tableau des meilleurs scores
+* Vue (View)
+  - **`GameView.java`** : Interface principale de jeu
+  - **`GameOverView.java`** : Écran de fin de partie
+  - **`HighScoresView.java`** : Tableau des meilleurs scores
 
-### Contrôleur (Controller)
-- **`GameController.java`** : Coordination entre le modèle et la vue
-- **`Main.java`** : Point d'entrée de l'application
+* Contrôleur (Controller)
+  - **`GameController.java`** : Coordination entre le modèle et la vue
+  - **`Main.java`** : Point d'entrée de l'application
 
 ## Structure des fichiers
 
@@ -152,7 +152,7 @@ MemoryGame/
 └── README.md                      # Documentation
 ```
 
-## groupe
+## Groupe
 
 - **Samir Ait said** [github.com/samirzoidac55](https://github.com/samirzoidac55)
 - **Achraf Abdelfadel** [github.com/abdelfadelAchraf](https://github.com/abdelfadelAchraf)
