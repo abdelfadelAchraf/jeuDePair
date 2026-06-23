@@ -34,19 +34,14 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 - IDE Java (IntelliJ IDEA)
 
 ## Installation
-
-### 1. Repo
-
+1. Repo
 ```bash
 git clone https://github.com/abdelfadelAchraf/jeuDePair.git
 cd jeuDePair
 ...
 ```
-
-### 2. Importation de projet
-
-### 3. Dépendances
-
+2. Importation de projet
+3. Dépendances
 - `mysql-connector-java-8.0.18.jar`
 - ...
 
@@ -154,17 +149,17 @@ MemoryGame/
 
 ##
 
-### Interface principale
+1. Interface principale
 - Grille 4x4 avec cartes retournables
 - Affichage du score, tentatives restantes et timer
 - Boutons pour redémarrer et consulter les scores
 
-### Écran de fin de partie
+2. Écran de fin de partie
 - Message de victoire ou défaite
 - Récapitulatif des statistiques
 - Options pour rejouer ou quitter
 
-### Gestion et Tableau des scores
+3. Gestion et Tableau des scores
 - Classement des 10 meilleurs joueurs
 - Affichage du score, temps et date
 - Tri automatique par score décroissant, puis temps croissant
