@@ -6,16 +6,37 @@ Une application Java desktop avec interface graphique permettant de jouer au jeu
 
 Le jeu de mémoire consiste à retourner des cartes pour former des paires identiques. Le joueur dispose de 3 essais pour trouver toutes les 8 paires disposées sur une grille 4x4. Le système enregistre automatiquement les meilleurs scores avec le temps de jeu et la date.
 
-## Fonctionnalités
+# Fonctionnalités
 
-- **Jeu de mémoire classique** : Grille 4x4 avec 8 paires d'images à associer
-- **Système de score** : Suivi du score et du temps de jeu
-- **Base de données** : Sauvegarde automatique des résultats
-- **Tableau des scores** : Affichage des 10 meilleurs scores
-- **Interface intuitive** : Interface graphique moderne avec Java Swing
-- **Gestion des joueurs** : Saisie du nom du joueur au démarrage
-- **Redémarrage rapide** : Possibilité de relancer une partie
-- **Auto-création BD** : Création automatique de la base de données si inexistante
+* **Jeu de mémoire classique** : grille 4×4 composée de 8 paires d'images à associer.
+* **Système de score** : suivi du score, du nombre de tentatives et du temps de jeu.
+* **Base de données** : sauvegarde automatique des résultats des parties.
+* **Tableau des scores** : affichage des 10 meilleurs scores.
+* **Gestion des joueurs** : saisie du nom du joueur au démarrage.
+* **Redémarrage rapide** : possibilité de relancer une partie à tout moment.
+* **Auto-création de la base de données** : création automatique de la base de données si elle n'existe pas.
+
+### Interface principale
+
+* Grille 4×4 avec cartes retournables.
+* Affichage du score, des tentatives restantes et du chronomètre.
+* Boutons permettant de redémarrer la partie et de consulter le tableau des scores.
+
+### Écran de fin de partie
+
+* Message de victoire ou de défaite.
+* Récapitulatif des statistiques de la partie.
+* Options permettant de rejouer ou de quitter l'application.
+
+### Gestion et tableau des scores
+
+* Classement des 10 meilleurs joueurs.
+* Affichage du score, du temps réalisé et de la date de la partie.
+* Tri automatique des résultats par score décroissant, puis par temps croissant.
+
+### Interface utilisateur
+
+* Interface graphique moderne et intuitive développée avec Java Swing.
 
 ## Technologies utilisées
 
@@ -77,7 +98,7 @@ private static final String PASS = "password";
 
 ## Utilisation
 
-### Lancement du jeu
+- Lancement du jeu
 
 1. **Compile & execute** :
    ```bash
@@ -87,19 +108,13 @@ private static final String PASS = "password";
 
 2. **depuis IDE** : `Main.java`
 
-### Règles du jeu
+- Règles du jeu
 
 1. **Saisissez nom** au démarrage
 2. **Cliquez sur les cartes** pour les retourner (2 à la fois)
 3. **Formez des paires** en associant des images identiques
 4. **Objectif** : Trouver toutes les 8 paires en maximum 3 erreurs
 5. **Score** : Plus vous trouvez de paires rapidement, meilleur est votre score
-
-### Fonctionnalités
-
-- **Redémarrer** : Nouvelle partie avec le même joueur
-- **High Scores** : Consulter le tableau des meilleurs scores
-- **Timer** : Suivi du temps de jeu en temps réel
 
 ## Architecture du projet
 
@@ -146,20 +161,6 @@ MemoryGame/
 ├── .gitignore                     # Fichiers ignorés par Git
 └── README.md                      # Documentation
 ```
-
-##
-**Interface principale**
-- Grille 4x4 avec cartes retournables
-- Affichage du score, tentatives restantes et timer
-- Boutons pour redémarrer et consulter les scores
-**Écran de fin de partie**
-- Message de victoire ou défaite
-- Récapitulatif des statistiques
-- Options pour rejouer ou quitter
-**Gestion et Tableau des scores**
-- Classement des 10 meilleurs joueurs
-- Affichage du score, temps et date
-- Tri automatique par score décroissant, puis temps croissant
 
 ## groupe
 
