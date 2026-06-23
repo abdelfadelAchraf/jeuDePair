@@ -35,46 +35,36 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 
 ## Installation
 
-### 1. Cloner le repository
+### 1. Repo
 
 ```bash
 git clone https://github.com/abdelfadelAchraf/jeuDePair.git
 cd jeuDePair
+...
 ```
 
-### 2. Importer le projet
+### 2. Importation de projet
 
-- Ouvrez IntelliJ IDEA
-- Sélectionnez "Open" et choisissez le dossier du projet
-- Le projet se configure automatiquement avec le fichier `.iml` inclus
+### 3. Dépendances
 
-### 3. Vérifier les dépendances
-
-Le connecteur MySQL est déjà configuré dans le projet. Vérifiez que le fichier JAR est bien présent :
 - `mysql-connector-java-8.0.18.jar`
+- ...
 
 ## Configuration de la base de données
 
-### Configuration automatique
+### Configuration
 
-L'application crée automatiquement la base de données au premier lancement. Assurez-vous que :
-
-1. **MySQL Server est démarré**
+1. **MySQL Server démarré**
 2. **L'utilisateur root existe** (mot de passe vide par défaut)
-3. **Le port 3306 est disponible**
-
-### Configuration manuelle (optionnelle)
-
-Si vous préférez configurer manuellement :
+3. **Disponible sur le port 3306**
 
 ```sql
--- Créer la base de données
+-- Database
 CREATE DATABASE memory_game;
 
--- Utiliser la base de données
 USE memory_game;
 
--- Créer la table des scores
+-- Table des scores
 CREATE TABLE scores (
     id INT AUTO_INCREMENT PRIMARY KEY,
     player_name VARCHAR(100) NOT NULL,
@@ -84,37 +74,36 @@ CREATE TABLE scores (
 );
 ```
 
-### Modifier la configuration
-
-Pour changer les paramètres de connexion, éditez le fichier `DatabaseManager.java` :
+Paramètres de connexion
+`DatabaseManager.java` :
 
 ```java
 private static final String DB_URL = "jdbc:mysql://localhost:3306/memory_game";
 private static final String USER = "root";
-private static final String PASS = "votre_mot_de_passe";
+private static final String PASS = "password";
 ```
 
 ## Utilisation
 
 ### Lancement du jeu
 
-1. **Compiler et exécuter** :
+1. **Compile & execute** :
    ```bash
    javac -cp ".:mysql-connector-java-8.0.18.jar" src/*.java src/**/*.java
    java -cp ".:mysql-connector-java-8.0.18.jar:src" Main
    ```
 
-2. **Ou depuis votre IDE** : Exécutez la classe `Main.java`
+2. **depuis IDE** : `Main.java`
 
 ### Règles du jeu
 
-1. **Saisissez votre nom** au démarrage
+1. **Saisissez nom** au démarrage
 2. **Cliquez sur les cartes** pour les retourner (2 à la fois)
 3. **Formez des paires** en associant des images identiques
 4. **Objectif** : Trouver toutes les 8 paires en maximum 3 erreurs
 5. **Score** : Plus vous trouvez de paires rapidement, meilleur est votre score
 
-### Fonctionnalités disponibles
+### Fonctionnalités
 
 - **Redémarrer** : Nouvelle partie avec le même joueur
 - **High Scores** : Consulter le tableau des meilleurs scores
@@ -199,16 +188,6 @@ MemoryGame/
 - **Gestion mémoire** : Utilisation optimisée des ressources
 - **Connexions BDD** : Ouverture/fermeture automatique des connexions
 - **Images** : Redimensionnement automatique pour l'affichage
-
-## Contribution
-
-Les contributions sont les bienvenues ! Pour contribuer :
-
-1. **Fork** le projet
-2. **Créez** votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. **Committez** vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** vers la branche (`git push origin feature/AmazingFeature`)
-5. **Ouvrez** une Pull Request
 
 ## groupe
 
