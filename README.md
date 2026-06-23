@@ -72,8 +72,7 @@ CREATE TABLE scores (
 );
 ```
 
-4. **Paramètres de connexion**
-`DatabaseManager.java` :
+4. **Paramètres de connexion** `DatabaseManager.java`
 
 ```java
 private static final String DB_URL = "jdbc:mysql://localhost:3306/memory_game";
