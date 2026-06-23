@@ -32,11 +32,7 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 
 * Classement des 10 meilleurs joueurs.
 * Affichage du score, du temps réalisé et de la date de la partie.
-* Tri automatique des résultats par score décroissant, puis par temps croissant.
-
-### Interface utilisateur
-
-* Interface graphique moderne et intuitive développée avec Java Swing.
+* Tri des résultats par score décroissant, puis par temps croissant.
 
 ## Technologies utilisées
 
