@@ -15,6 +15,7 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 * **Gestion des joueurs** : saisie du nom du joueur au démarrage.
 * **Redémarrage rapide** : possibilité de relancer une partie à tout moment.
 * **Auto-création de la base de données** : création automatique de la base de données si elle n'existe pas.
+
 * Interface principale
   * Grille 4×4 avec cartes retournables.
   * Affichage du score, des tentatives restantes et du chronomètre.
