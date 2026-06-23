@@ -15,16 +15,15 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 * **Gestion des joueurs** : saisie du nom du joueur au démarrage.
 * **Redémarrage rapide** : possibilité de relancer une partie à tout moment.
 * **Auto-création de la base de données** : création automatique de la base de données si elle n'existe pas.
-
-* Interface principale
+* **Interface principale**
   * Grille 4×4 avec cartes retournables.
   * Affichage du score, des tentatives restantes et du chronomètre.
   * Boutons permettant de redémarrer la partie et de consulter le tableau des scores.
-* Écran de fin de partie
+* **Écran de fin de partie**
   * Message de victoire ou de défaite.
   * Récapitulatif des statistiques de la partie.
   * Options permettant de rejouer ou de quitter l'application.
-* Gestion et tableau des scores
+* **Gestion et tableau des scores**
   * Classement des 10 meilleurs joueurs.
   * Affichage du score, du temps réalisé et de la date de la partie.
   * Tri des résultats par score décroissant, puis par temps croissant.
