@@ -72,7 +72,7 @@ CREATE TABLE scores (
 );
 ```
 
-Paramètres de connexion
+4. **Paramètres de connexion**
 `DatabaseManager.java` :
 
 ```java
