@@ -52,8 +52,6 @@ cd jeuDePair
 
 ## Configuration de la base de données
 
-### Configuration
-
 1. **MySQL Server démarré**
 2. **L'utilisateur root existe** (mot de passe vide par défaut)
 3. **Disponible sur le port 3306**
