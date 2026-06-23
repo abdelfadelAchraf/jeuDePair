@@ -28,8 +28,6 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 
 ## Prérequis
 
-Avant d'exécuter le projet, assurez-vous d'avoir installé :
-
 - **Java Development Kit (JDK) 17** ou supérieur
 - **MySQL Server 8.0** ou supérieur
 - **MySQL Connector/J 8.0.18** (inclus dans le projet)
