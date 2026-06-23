@@ -164,27 +164,10 @@ MemoryGame/
 - Récapitulatif des statistiques
 - Options pour rejouer ou quitter
 
-### Tableau des scores
+### Gestion et Tableau des scores
 - Classement des 10 meilleurs joueurs
 - Affichage du score, temps et date
-- Tri automatique par score décroissant
-
-## Fonctionnalités
-
-### Gestion des scores
-- **Sauvegarde intelligente** : Met à jour uniquement si le nouveau score est meilleur
-- **Critères de classement** : Score décroissant, puis temps croissant
-- **Persistance** : Stockage permanent en base de données MySQL
-
-### Interface utilisateur
-- **Responsive** : Interface adaptative selon la taille de fenêtre
-- **Feedback visuel** : Animation des cartes et mise à jour en temps réel
-- **Ergonomie** : Navigation intuitive et contrôles simples
-
-###
-- **Gestion mémoire** : Utilisation optimisée des ressources
-- **Connexions BDD** : Ouverture/fermeture automatique des connexions
-- **Images** : Redimensionnement automatique pour l'affichage
+- Tri automatique par score décroissant, puis temps croissant
 
 ## groupe
 
