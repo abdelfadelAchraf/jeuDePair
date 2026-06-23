@@ -31,7 +31,7 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 - **Java Development Kit (JDK) 17** ou supérieur
 - **MySQL Server 8.0** ou supérieur
 - **MySQL Connector/J 8.0.18** (inclus dans le projet)
-- Un IDE Java (IntelliJ IDEA recommandé)
+- IDE Java (IntelliJ IDEA)
 
 ## Installation
 
