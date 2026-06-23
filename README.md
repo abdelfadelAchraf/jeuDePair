@@ -169,7 +169,7 @@ MemoryGame/
 - Affichage du score, temps et date
 - Tri automatique par score décroissant
 
-## Fonctionnalités techniques
+## Fonctionnalités
 
 ### Gestion des scores
 - **Sauvegarde intelligente** : Met à jour uniquement si le nouveau score est meilleur
