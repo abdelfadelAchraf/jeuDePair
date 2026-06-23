@@ -155,7 +155,7 @@ MemoryGame/
 └── README.md                      # Documentation
 ```
 
-## Screenshots
+##
 
 ### Interface principale
 - Grille 4x4 avec cartes retournables
@@ -184,7 +184,7 @@ MemoryGame/
 - **Feedback visuel** : Animation des cartes et mise à jour en temps réel
 - **Ergonomie** : Navigation intuitive et contrôles simples
 
-### Performance
+###
 - **Gestion mémoire** : Utilisation optimisée des ressources
 - **Connexions BDD** : Ouverture/fermeture automatique des connexions
 - **Images** : Redimensionnement automatique pour l'affichage
