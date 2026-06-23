@@ -1,20 +1,6 @@
-# 🃏 Jeu de Mémoire (Memory Game)
+# Jeu de Mémoire (Memory Game)
 
 Une application Java desktop avec interface graphique permettant de jouer au jeu de mémoire classique (jeu des paires). Le projet utilise **Java Swing** pour l'interface utilisateur et **MySQL** pour la persistance des scores, suivant l'architecture **MVC (Modèle-Vue-Contrôleur)**.
-
-## Table des matières
-
-- [Aperçu](#aperçu)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies utilisées](#technologies-utilisées)
-- [Prérequis](#prérequis)
-- [Installation](#installation)
-- [Configuration de la base de données](#configuration-de-la-base-de-données)
-- [Utilisation](#utilisation)
-- [Architecture du projet](#architecture-du-projet)
-- [Structure des fichiers](#structure-des-fichiers)
-- [Screenshots](#screenshots)
-- [Contribution](#contribution)
 
 ## Aperçu
 
@@ -31,7 +17,7 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 - **Redémarrage rapide** : Possibilité de relancer une partie
 - **Auto-création BD** : Création automatique de la base de données si inexistante
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 - **Java 17** - Langage de programmation principal
 - **Java Swing** - Interface graphique utilisateur
@@ -155,7 +141,7 @@ Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
 - **`GameController.java`** : Coordination entre le modèle et la vue
 - **`Main.java`** : Point d'entrée de l'application
 
-## 📁 Structure des fichiers
+## Structure des fichiers
 
 ```
 MemoryGame/
@@ -199,7 +185,7 @@ MemoryGame/
 - Affichage du score, temps et date
 - Tri automatique par score décroissant
 
-## 🔧 Fonctionnalités techniques
+## Fonctionnalités techniques
 
 ### Gestion des scores
 - **Sauvegarde intelligente** : Met à jour uniquement si le nouveau score est meilleur
@@ -216,7 +202,7 @@ MemoryGame/
 - **Connexions BDD** : Ouverture/fermeture automatique des connexions
 - **Images** : Redimensionnement automatique pour l'affichage
 
-## 🤝 Contribution
+## Contribution
 
 Les contributions sont les bienvenues ! Pour contribuer :
 
@@ -226,36 +212,9 @@ Les contributions sont les bienvenues ! Pour contribuer :
 4. **Push** vers la branche (`git push origin feature/AmazingFeature`)
 5. **Ouvrez** une Pull Request
 
-### Guidelines de contribution
-
-- Suivez l'architecture MVC existante
-- Documentez votre code
-- Testez vos modifications
-- Respectez les conventions de nommage Java
-
-## 📝 Licence
-
-Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE` pour plus d'informations.
-
-## 👥 Auteurs
+## groupe
 
 - **Samir Ait said** [github.com/samirzoidac55](https://github.com/samirzoidac55)
 - **Achraf Abdelfadel** [github.com/abdelfadelAchraf](https://github.com/abdelfadelAchraf)
 - **Saad El Aroui** [github.com/Saadar0](https://github.com/Saadar0)
 - **zakaria ennaqui** [github.com/zakariaennaqui](https://github.com/zakariaennaqui)
-
-## 🆘 Support
-
-Si vous rencontrez des problèmes :
-
-1. **Vérifiez** que MySQL est démarré
-2. **Consultez** les logs de l'application
-3. **Ouvrez** une issue sur GitHub avec :
-   - Description du problème
-   - Étapes pour reproduire
-   - Configuration système
-   - Messages d'erreur éventuels
-
----
-
-⭐ N'hésitez pas à laisser une étoile si ce projet vous a été utile !
