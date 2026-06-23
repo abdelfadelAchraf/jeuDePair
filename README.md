@@ -6,7 +6,7 @@ Une application Java desktop avec interface graphique permettant de jouer au jeu
 
 Le jeu de mémoire consiste à retourner des cartes pour former des paires identiques. Le joueur dispose de 3 essais pour trouver toutes les 8 paires disposées sur une grille 4x4. Le système enregistre automatiquement les meilleurs scores avec le temps de jeu et la date.
 
-# Fonctionnalités
+## Fonctionnalités
 
 * **Jeu de mémoire classique** : grille 4×4 composée de 8 paires d'images à associer.
 * **Système de score** : suivi du score, du nombre de tentatives et du temps de jeu.
@@ -15,24 +15,18 @@ Le jeu de mémoire consiste à retourner des cartes pour former des paires ident
 * **Gestion des joueurs** : saisie du nom du joueur au démarrage.
 * **Redémarrage rapide** : possibilité de relancer une partie à tout moment.
 * **Auto-création de la base de données** : création automatique de la base de données si elle n'existe pas.
-
-### Interface principale
-
-* Grille 4×4 avec cartes retournables.
-* Affichage du score, des tentatives restantes et du chronomètre.
-* Boutons permettant de redémarrer la partie et de consulter le tableau des scores.
-
-### Écran de fin de partie
-
-* Message de victoire ou de défaite.
-* Récapitulatif des statistiques de la partie.
-* Options permettant de rejouer ou de quitter l'application.
-
-### Gestion et tableau des scores
-
-* Classement des 10 meilleurs joueurs.
-* Affichage du score, du temps réalisé et de la date de la partie.
-* Tri des résultats par score décroissant, puis par temps croissant.
+* Interface principale
+  * Grille 4×4 avec cartes retournables.
+  * Affichage du score, des tentatives restantes et du chronomètre.
+  * Boutons permettant de redémarrer la partie et de consulter le tableau des scores.
+* Écran de fin de partie
+  * Message de victoire ou de défaite.
+  * Récapitulatif des statistiques de la partie.
+  * Options permettant de rejouer ou de quitter l'application.
+* Gestion et tableau des scores
+  * Classement des 10 meilleurs joueurs.
+  * Affichage du score, du temps réalisé et de la date de la partie.
+  * Tri des résultats par score décroissant, puis par temps croissant.
 
 ## Technologies utilisées
 
