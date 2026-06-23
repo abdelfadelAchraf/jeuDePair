@@ -6,6 +6,8 @@ Une application Java desktop avec interface graphique permettant de jouer au jeu
 
 Le jeu de mémoire consiste à retourner des cartes pour former des paires identiques. Le joueur dispose de 3 essais pour trouver toutes les 8 paires disposées sur une grille 4x4. Le système enregistre automatiquement les meilleurs scores avec le temps de jeu et la date.
 
+![Objectif principal du jeu](images/Objectif_principal_du_jeu.png)
+
 ## Architecture du projet
 
 Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
@@ -25,6 +27,8 @@ Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
   - **`GameController.java`** : Coordination entre le modèle et la vue
   - **`Main.java`** : Point d'entrée de l'application
 
+![Architecture MVC](images/Architecture_MVC.png)
+
 ## Technologies utilisées
 
 - **Java 17** - Langage de programmation principal
@@ -33,6 +37,8 @@ Le projet suit l'architecture **MVC (Modèle-Vue-Contrôleur)** :
 - **MySQL 8.0** - Base de données pour la persistance
 - **Architecture MVC** - Séparation des responsabilités
 - **IntelliJ IDEA** - Environnement de développement
+
+![Technologies utilisées](images/Technologies_utilisées.jpg)
 
 ## Prérequis
 
@@ -68,6 +74,8 @@ MemoryGame/
 └── README.md                      # Documentation
 ```
 
+![Structure du projet](images/Annexe.png)
+
 ## Fonctionnalités
 
 * **Jeu de mémoire classique** : grille 4×4 composée de 8 paires d'images à associer.
@@ -89,6 +97,8 @@ MemoryGame/
   * Classement des 10 meilleurs joueurs.
   * Affichage du score, du temps réalisé et de la date de la partie.
   * Tri des résultats par score décroissant, puis par temps croissant.
+
+![Fonctionnalités principales](images/Fonctionnalités_principales.png)
 
 ## Installation
 1. Repo
@@ -151,6 +161,12 @@ private static final String PASS = "password";
   * **Formez des paires** en associant des images identiques
   * **Objectif** : Trouver toutes les 8 paires en maximum 3 erreurs
   * **Score** : Plus vous trouvez de paires rapidement, meilleur est votre score
+
+![Diagramme de navigation](images/Diagramme_de_navigation.png)
+
+## Diagramme de classes UML
+
+![Diagramme de classes UML](images/Diagramme__classes_UML.png)
 
 ## Groupe
 
