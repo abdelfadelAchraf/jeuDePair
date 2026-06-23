@@ -148,18 +148,15 @@ MemoryGame/
 ```
 
 ##
-
-1. Interface principale
+**Interface principale**
 - Grille 4x4 avec cartes retournables
 - Affichage du score, tentatives restantes et timer
 - Boutons pour redémarrer et consulter les scores
-
-2. Écran de fin de partie
+**Écran de fin de partie**
 - Message de victoire ou défaite
 - Récapitulatif des statistiques
 - Options pour rejouer ou quitter
-
-3. Gestion et Tableau des scores
+**Gestion et Tableau des scores**
 - Classement des 10 meilleurs joueurs
 - Affichage du score, temps et date
 - Tri automatique par score décroissant, puis temps croissant
